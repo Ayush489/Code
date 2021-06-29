@@ -26,11 +26,19 @@ void printArray(int arr[], int size)
  
 int main() 
 { 
-    int arr[] = {64, 34, 25, 12, 22, 11, 90}; 
-    int n = sizeof(arr)/sizeof(arr[0]); 
+   int i,n;
+   cout<<"Enter total number of elements:"<<"\n";
+   cin>>n;
+  
+   int *arr = new int[n];
+   cout<<"Enter "<<n<<" elements"<<endl;
+   for(i = 0;i<n;i++) {
+      cin>>arr[i];
+   }
+   cout<<endl;
     Sort(arr, n); 
     cout<<"Sorted array: \n"; 
     printArray(arr, n); 
+    delete[] arr;
     return 0; 
 } 
- 
