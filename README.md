@@ -1,4 +1,8 @@
 # Code
+
+
+
+// SORTING TECHNIQUE 1
 #include <bits/stdc++.h>
 using namespace std;
  
@@ -41,4 +45,4 @@ int main()
     printArray(arr, n); 
     delete[] arr;
     return 0; 
-} 
+}
